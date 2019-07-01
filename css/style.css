@@ -8852,7 +8852,8 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .testimony {
-    background: #c49b63;
+    /* background: #c49b63; */
+    /* background: url('images/old640.jpg'); */
     padding: 2em;
     color: #fff;
 }
