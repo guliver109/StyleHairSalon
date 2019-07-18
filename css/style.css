@@ -3888,6 +3888,10 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
     /* text-shadow: #CD853F 0px 0px 10px;  */
 }
 
+.text h3 {
+    color: #fff;
+}
+
 /* ---------- ftco-section -------------- */
 
 .ftco-section .ftco-sub-title {
@@ -5263,9 +5267,9 @@ a.bg-dark:hover, a.bg-dark:focus, button.bg-dark:hover, button.bg-dark:focus {
     }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .ftco-about .one-half .overlap {
-        margin-left: -150px;
+        margin: 10px;
         padding: 40px;
         background: rgba(0, 0, 0, 0.5);
     }
@@ -7843,15 +7847,15 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .btn.btn-primary {
-    /* background: #1b1b1b; */
+    background: #1b1b1b;
     border: 1px solid #1b1b1b;
     color: #CD853F;
     border-radius: 30px;
 }
 
 .btn.btn-primary:hover {
-    border: 1px solid #fdfdfe;
-    background: #fdfdfe;
+    border: 1px solid #CD853F;
+    background: #CD853F;
     color: #1b1b1b;
 }
 
@@ -8101,7 +8105,7 @@ a.text-dark:hover, a.text-dark:focus {
     font-family: "Great Vibes", cursive;
     color: #CD853F;
     line-height: 1;
-    margin-bottom: -1px;
+    margin-bottom: 5px;
     z-index: 1;
 }
 
@@ -8523,7 +8527,7 @@ a.text-dark:hover, a.text-dark:focus {
     left: 0;
     right: 0;
     bottom: 0;
-    background: #000;
+    /* background: #000; */
     opacity: .5;
 }
 
@@ -8582,6 +8586,7 @@ a.text-dark:hover, a.text-dark:focus {
 .ftco-counter .text span {
     font-weight: 400;
     font-size: 14px;
+    color: #CD853F;
 }
 
 .ftco-counter .text:hover .icon span, .ftco-counter .text:focus .icon span {
@@ -9385,31 +9390,36 @@ a.text-dark:hover, a.text-dark:focus {
     padding-left: 0;
     padding-right: 0;
     background: transparent !important;
-    color: rgba(255, 255, 255, 0.9) !important;
+    /* color: rgba(255, 255, 255, 0.9) !important; */
     font-size: 13px;
     border-radius: 0px;
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
+    color: #CD853F !important;
 }
 
 .contact-form .form-control::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
-    color: rgba(255, 255, 255, 0.9);
+    /* color: rgba(255, 255, 255, 0.9); */
+    color: #CD853F;
 }
 
 .contact-form .form-control::-moz-placeholder {
     /* Firefox 19+ */
-    color: rgba(255, 255, 255, 0.9);
+    /* color: rgba(255, 255, 255, 0.9); */
+    color: #CD853F;
 }
 
 .contact-form .form-control:-ms-input-placeholder {
     /* IE 10+ */
-    color: rgba(255, 255, 255, 0.9);
+    /* color: rgba(255, 255, 255, 0.9); */
+    color: #CD853F;
 }
 
 .contact-form .form-control:-moz-placeholder {
     /* Firefox 18- */
-    color: rgba(255, 255, 255, 0.9);
+    /* color: rgba(255, 255, 255, 0.9); */
+    color: #CD853F;
 }
 
 .contact-form .form-control:focus, .contact-form .form-control:active {
