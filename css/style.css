@@ -3843,10 +3843,10 @@ body {
     background-size: cover;
 }
 
-/* .body-p {
+.body-p-services {
     color: #CD853F;
-    font-size: 15px;
-} */
+    /* font-size: 15px; */
+}
 
 body.menu-show {
     overflow: hidden;
@@ -3856,7 +3856,7 @@ body.menu-show {
 }
 
 span {
-    color: #bfbfbf;
+    color: #CD853F;
 }
 
 a {
@@ -3883,6 +3883,7 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
 .text-primary {
     color: #CD853F !important;
 }
+
 .text p {
     color: #CD853F;
     /* text-shadow: #CD853F 0px 0px 10px;  */
@@ -5334,6 +5335,9 @@ a.bg-dark:hover, a.bg-dark:focus, button.bg-dark:hover, button.bg-dark:focus {
     }
     .d-md-block {
         display: block !important;
+    }
+    .d-block {
+        color: #1b1b1b !important;
     }
     .d-md-table {
         display: table !important;
@@ -7847,7 +7851,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .btn.btn-primary {
-    background: #1b1b1b;
+    /* background: #1b1b1b; */
     border: 1px solid #1b1b1b;
     color: #CD853F;
     border-radius: 30px;
@@ -8026,7 +8030,10 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .services-wrap .text {
-    background: #000;
+    background-image: url("/images/texture640.jpg");
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
     position: relative;
 }
 
@@ -8638,10 +8645,11 @@ a.text-dark:hover, a.text-dark:focus {
     left: 0;
     right: 0;
     content: '';
-    width: 100%;
+    width: 60%;
     height: 1px;
-    border-bottom: 1px dashed #785028;
+    border-bottom: 1px dashed #1b1b1b;
     z-index: -1;
+    margin-left: 140px;
 }
 
 .pricing-entry .text h3 {
@@ -8650,7 +8658,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .pricing-entry .text h3 span {
-    background: #1b1b1b;
+    /* background: #1b1b1b; */
     padding-right: 20px;
 }
 
@@ -8658,7 +8666,7 @@ a.text-dark:hover, a.text-dark:focus {
     width: 80px;
     color: #CD853F;
     text-align: right;
-    background: #1b1b1b;
+    /* background: #1b1b1b; */
     font-size: 16px;
 }
 
@@ -9005,6 +9013,18 @@ a.text-dark:hover, a.text-dark:focus {
     font-size: 17px;
     font-weight: 400;
     color: #000;
+}
+
+.block-18 .icon>span {
+    font-size: 40px;
+}
+
+.block-18 .text strong {
+    font-size: 30px;
+}
+
+.block-18 .text span {
+    display: block;
 }
 
 .ftco-footer .block-21 .text .heading {

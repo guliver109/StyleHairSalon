@@ -45,33 +45,6 @@ AOS.init({
     // parallax scrolling effect plugin
     $.Scrollax();
 
-    // navbar menu toggle
-    $('nav .dropdown').hover(function () {
-        // var $this = $(this);
-        // timer;
-        // clearTimeout(timer);
-        $(this).addClass('show');
-        $(this).find('> a').attr('aria-expended', true);
-        // $(this).find('.dropdown-menu').addClass('animated-fast fadeInUp show');
-        $(this).find('.dropdown-menu').addClass('show');
-    }, function () {
-        // timer;
-        // timer = setTimeout(function(){
-        $(this).removeClass('show');
-        $(this).find('> a').attr('aria-expanded', false);
-        // $(this).find('.dropdown-menu').removeClass('animated-fast fadeInUp show');
-        $(this).find('.dropdown-menu').removeClass('show');
-        // }, 100);
-    });
-
-    $('#dropdown04').on('show.bs.dropdown', function () {
-        console.log('show');
-    });
-
-    // $('.navbar-toggler').click(function () {
-    //     $('.collapse').toggle();
-
-    // });
 
     // Carousel
     var carousel = function () {
@@ -126,8 +99,35 @@ AOS.init({
         });
     };
     carousel();
-
 }(jQuery));
+
+// navbar menu toggle
+$('nav .dropdown').hover(function () {
+    // var $this = $(this);
+    // timer;
+    // clearTimeout(timer);
+    $(this).addClass('show');
+    $(this).find('> a').attr('aria-expended', true);
+    // $(this).find('.dropdown-menu').addClass('animated-fast fadeInUp show');
+    $(this).find('.dropdown-menu').addClass('show');
+}, function () {
+    // timer;
+    // timer = setTimeout(function(){
+    $(this).removeClass('show');
+    $(this).find('> a').attr('aria-expanded', false);
+    // $(this).find('.dropdown-menu').removeClass('animated-fast fadeInUp show');
+    $(this).find('.dropdown-menu').removeClass('show');
+    // }, 100);
+});
+
+$('#dropdown04').on('show.bs.dropdown', function () {
+    console.log('show');
+});
+
+// $('.navbar-toggler').click(function () {
+//     $('.collapse').toggle();
+
+// });
 
 // scroll navbar feature(shownig navbar when scroll down)
 var scrollWindow = function () {
@@ -191,28 +191,28 @@ var isMobile = {
 };
 
 // counter for features
-var counter = function() {
+var counter = function () {
 
-    $('#section-counter').waypoint( function( direction ) {
+    $('#section-counter').waypoint(function (direction) {
 
-        if( direction === 'down' && !$(this.element).hasClass('ftco-animated') ) {
+        if (direction === 'down' && !$(this.element).hasClass('ftco-animated')) {
 
             var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',')
-            $('.number').each(function(){
+            $('.number').each(function () {
                 var $this = $(this),
                     num = $this.data('number');
-                    console.log(num);
+                console.log(num);
                 $this.animateNumber(
-                  {
-                    number: num,
-                    numberStep: comma_separator_number_step
-                  }, 7000
+                    {
+                        number: num,
+                        numberStep: comma_separator_number_step
+                    }, 7000
                 );
             });
 
         }
 
-    } , { offset: '95%' } );
+    }, { offset: '95%' });
 
 }
 counter();
@@ -248,25 +248,25 @@ var contentWayPoint = function () {
 contentWayPoint();
 
 // navigation
-var OnePageNav = function() {
-    $(".smoothscroll[href^='#'], #ftco-nav ul li a[href^='#']").on('click', function(e) {
-         e.preventDefault();
+var OnePageNav = function () {
+    $(".smoothscroll[href^='#'], #ftco-nav ul li a[href^='#']").on('click', function (e) {
+        e.preventDefault();
 
-         var hash = this.hash,
-                 navToggler = $('.navbar-toggler');
-         $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 700, 'easeInOutExpo', function(){
-        window.location.hash = hash;
-      });
+        var hash = this.hash,
+            navToggler = $('.navbar-toggler');
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 700, 'easeInOutExpo', function () {
+            window.location.hash = hash;
+        });
 
 
-      if ( navToggler.is(':visible') ) {
-          navToggler.click();
-      }
+        if (navToggler.is(':visible')) {
+            navToggler.click();
+        }
     });
     $('body').on('activate.bs.scrollspy', function () {
-      console.log('nice');
+        console.log('nice');
     })
 };
 OnePageNav();
@@ -278,16 +278,16 @@ $('.image-popup').magnificPopup({
     closeBtnInside: true,
     fixedContentPos: true,
     mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
-     gallery: {
-      enabled: true,
-      navigateByImgClick: true,
-      preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+    gallery: {
+        enabled: true,
+        navigateByImgClick: true,
+        preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
     },
     image: {
-      verticalFit: true
+        verticalFit: true
     },
     zoom: {
-      enabled: true,
-      duration: 300 // don't foget to change the duration also in CSS
+        enabled: true,
+        duration: 300 // don't foget to change the duration also in CSS
     }
-  });
+});
