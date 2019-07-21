@@ -4553,6 +4553,10 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
     top: 0;
     margin-top: -130px;
     background: #1b1b1b !important;
+    /* background-image: url(../images/texture1920.jpg) !important; */
+    overflow: hidden; 
+    background-size: cover; 
+    background-position: center; 
     -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 }
@@ -5228,6 +5232,7 @@ a.bg-dark:hover, a.bg-dark:focus, button.bg-dark:hover, button.bg-dark:focus {
 
 .ftco-intro .wrap h3 {
     font-size: 16px;
+    color: #1b1b1b;
 }
 
 .ftco-intro .wrap .text {
@@ -8030,7 +8035,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .services-wrap .text {
-    background-image: url("/images/texture640.jpg");
+    background-image: url(../images/texture640.jpg);
     overflow: hidden;
     background-size: cover;
     background-position: center;
